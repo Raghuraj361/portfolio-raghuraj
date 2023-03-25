@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4c7987317.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="main-logo"><span></span><span> Newton School</span></div>    
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                     
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Raghuraj</span><br>  From India</h1>
+            </div>
+        </div>
+    </div>
+    
+<!----------------------------- about ------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1565954068903.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To succeed an environment of growth and excellence and earn a job which provides me job satisfaction and self development and help me to achieve personal as well as organisational development  </p>
+
+                    <div class="tab-tities">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        
+                        <ul>
+                            <li><span></span><br>Data Structure & Algorithm</li>
+                            <li><span></span><br>JAVA</li>
+                            <li><span></span><br>HyperText Markup Language</li>
+                            <li><span></span><br>Cascading Style Sheets</li>
+                            <li><span></span><br>JavaScript</li>
+                            <li><span></span><br>React JS</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        
+                        <ul>
+                            <li><span></span><br>Fresher</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br> FUll Stack Web Development course</li>
+                            <li><span>2018</span><br>B-Tech Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------ services ------------------------------------->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum deserunt dolorem magni laborum. Dignissimos quasi distinctio laudantium soluta repellendus rem natus iusto corrupti nam doloribus, perspiciatis, sapiente harum eos.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum deserunt dolorem magni laborum. Dignissimos quasi distinctio laudantium soluta repellendus rem natus iusto corrupti nam doloribus, perspiciatis, sapiente harum eos.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum deserunt dolorem magni laborum. Dignissimos quasi distinctio laudantium soluta repellendus rem natus iusto corrupti nam doloribus, perspiciatis, sapiente harum eos.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!------------------------------------------------- portfolio --------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Puma Clone</h3>
+                        <p>Features:  Responsive and Good UI design.</p>
+                        <h4>Tech Stack: React JS, </h4>
+                        <p>Description: Created an Puma clone website in which we can add the desired product in shopping basket and can complete the checkout process. We can also increment and decrement the quantity of product.</p>
+                        <a href="https://puma-clone-xi.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Meme Generator</h3>
+                        <p>Features: Responsive.</p>
+                        <h4>Tech Stack: React JS, </h4>
+                        <p>Description: Created a meme generator it shows meme template which we are displaying by calling API. We can edit the meme template and also can save in our desktop or laptop.</p>
+                        <a href="https://meme-generator-two-chi.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Task Manager</h3>
+                        <p>Features:  Responsive</p>
+                        <h4>Tech Stack: HTML, CSS, JavaScript.</h4>
+                        <p>Description: It is a task manager in which we can add the task, also can edit and delete the task and can drag and drop a task from one state to another.</p>
+                        <a href="https://task-manager-app-js-placement-project-9ksy6nxaoik7.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------------------------------- contact ------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Sraghuraj361@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9993154817</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/Resume-Raghuraj Singh Rajpoot (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Raghuraj. <i class="fa-solid fa-heart"></i> Thank You</p>
+        </div>
+    </div>
+
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab (tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+    </script>
+
+    <script>
+
+       var sidemeu = document.getElementById("sidemenu");
+
+       function openmenu() {
+        sidemeu.style.right = "0";
+       }
+       function closemenu() {
+        sidemeu.style.right = "-200px";
+       }
+
+    </script>
+    
+</body>
+</html>
